@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
@@ -9,4 +10,17 @@ a {
   border-style: solid;
   border-radius: .3rem;
   border-color: #00B7FF;
+}
+
+.navLinks {
+margin-top: 3rem;
+}
+
+#navLink1 {
+  margin-right: 2rem;
+  padding: .5rem;
+}
+
+#navLink2 {
+  padding: .5rem;
 }
