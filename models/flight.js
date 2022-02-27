@@ -15,4 +15,9 @@ const flightSchema = new Schema ({
   departs: Date,
 })
 
-//
+//compile the schema into a model and expor it
+const Flight = mongoose.model('Flight', flightSchema)
+
+export {
+  Flight
+}
