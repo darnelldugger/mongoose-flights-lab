@@ -4,32 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/new.css' />
   <title>Document</title>
 </head>
 <body>
-  <h1>Enter a New Flight</h1>
-  <form action="/flights" method="POST">
-    <label>Airline:
-      <input type="text" name="airline">
-    </label><br>
-    <label>Airport
-      <select name="airport">
-        <option value="AUS">AUS</option>
-        <option value="DFW">DFW</option>
-        <option value="DEN">DEN</option>
-        <option value="LAX">LAX</option>
-        <option value="SAN">SAN</option>
-      </select>
-    </label><br>
-    <label>Flight Number:
-      <input type="text" name="flightNo">
-    </label><br>
-    <label>Depart Date
-      <input type="datetime-local" name="departs">
-    </label><br>
-    <button type="submit">Add Flight</button>
-  </form>
+  <div class="content">
+    <h1>Enter a New Flight</h1>
+    <form action="/flights" method="POST">
+      <div class="airlineRow">
+        <label>Airline:
+          <input type="text" name="airline">
+        </label><br>
+      </div>
+      <div class="airportRow">
+      <label>Airport
+          <select name="airport">
+            <option value="AUS">AUS</option>
+            <option value="DFW">DFW</option>
+            <option value="DEN">DEN</option>
+            <option value="LAX">LAX</option>
+            <option value="SAN">SAN</option>
+          </select>
+        </label><br>
+      </div>
+      <div class="flightRow">
+        <label>Flight Number:
+          <input type="text" name="flightNo">
+        </label><br>
+      </div>
+      <div class="departRow">
+        <label>Depart Date
+          <input type="datetime-local" name="departs">
+        </label><br>
+      </div>
+      <button type="submit">Add Flight</button>
+    </form>
+</div>
 </body>
 </html>
  

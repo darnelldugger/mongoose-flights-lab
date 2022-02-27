@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.airlineRow {
+  margin-bottom: 1rem;
+
+}
+.airportRow {
+  margin-bottom: 1rem;
+}
+
+.flightRow {
+  margin-bottom: 1rem;
+}
+
+.departRow {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: white;
+  border-radius: .3rem;
+  border-color: #0077bf;
+  border-style: solid;
+  size: 50px;
+}
+
+.content {
+  background-color: #0077bf;
+  margin: 3rem;
+  padding: 3rem;
+}

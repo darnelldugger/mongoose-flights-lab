@@ -24,3 +24,9 @@ margin-top: 3rem;
 #navLink2 {
   padding: .5rem;
 }
+
+.content {
+  background-color: #0077bf;
+  margin: 3rem;
+  padding: 3rem;
+}
