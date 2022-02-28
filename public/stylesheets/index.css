@@ -2,22 +2,39 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 3fr 3fr;
+
+ 
 }
 
+.main {
+  background-color: yellow;
+  height: 100%;
+  margin-bottom: none;
+  border-radius: .3rem;
+}
 a {
-  color: #00B7FF;
+  color: black;
   text-decoration: none;
   border-style: solid;
   border-radius: .3rem;
-  border-color: #00B7FF;
+  border-color: black;
+  background-color: yellow;
+ 
 }
 
 .navLinks {
-margin-top: 3rem;
+  margin: .5rem;
+  padding-top: 3rem;
+  background-color: white;
+  height: 100%;
+  border-radius: .3rem;
 }
 
 #navLink1 {
-  margin-right: 2rem;
+margin-bottom: 3rem;
   padding: .5rem;
 }
 
@@ -25,8 +42,26 @@ margin-top: 3rem;
   padding: .5rem;
 }
 
+#navLink3 {
+  padding: .5rem;
+}
+
+.homePgLink {
+  margin-top: 3rem;
+}
 .content {
-  background-color: #0077bf;
+  background-color: white;
   margin: 3rem;
   padding: 3rem;
+  border-radius: .3rem;
+  
+}
+
+#column1 {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#column3{
+  margin: 1rem;
 }

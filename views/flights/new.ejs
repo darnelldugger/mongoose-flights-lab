@@ -13,7 +13,11 @@
     <form action="/flights" method="POST">
       <div class="airlineRow">
         <label>Airline:
-          <input type="text" name="airline">
+          <select name="airport">
+            <option value="American">American</option>
+            <option value="Southwest">Southwest</option>
+            <option value="United">United</option>
+          </select>
         </label><br>
       </div>
       <div class="airportRow">
@@ -39,6 +43,9 @@
       </div>
       <button type="submit">Add Flight</button>
     </form>
+  <div class="bottomLink">
+    <a href="/flights" id="navLink5">View All Flights</a>
+  </div>
 </div>
 </body>
 </html>

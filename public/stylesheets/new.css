@@ -3,6 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: grid;
   grid-template-rows: auto;
+  background-color: black;
 }
 
 .airlineRow {
@@ -24,13 +25,42 @@ body {
 button {
   background-color: white;
   border-radius: .3rem;
-  border-color: #0077bf;
+  border-color: black;
   border-style: solid;
   size: 50px;
+  font-size: 15px;
+  padding: .3rem;
 }
 
 .content {
-  background-color: #0077bf;
+  background-color: yellow;
   margin: 3rem;
   padding: 3rem;
+  border-radius: .7rem;
+  
+}
+
+input {
+  border-radius: .3rem;
+  border-color: black;
+}
+
+select {
+  border-radius: .3rem;
+  border-color: black;
+  border-width: .15rem;
+}
+
+.bottomLink {
+  padding-top: 1rem;
+}
+
+#navLink5 {
+  background-color: white;
+  border-radius: .2rem;
+  border-color: black;
+  border-style: solid;
+  text-decoration: none;
+  color: black;
+  padding: .3rem;
 }

@@ -5,14 +5,21 @@ const Schema = mongoose.Schema
 const flightSchema = new Schema ({
   airline: {
     type:String,
-    enum: ['American', 'Southwest', 'United']
+    enum: ['American', 'Southwest', 'United'],
+    required: true
   },
   airport: {
     type:String,
-    enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN']
+    enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN'],
+    required: true
   },
-  flightNo: Number,
-  departs: Date,
+  flightNo: {
+  type: Number,
+  required: true,
+  min: 10,
+  max: 9999
+}, 
+  departs: Date
 })
 
 //compile the schema into a model and expor it
