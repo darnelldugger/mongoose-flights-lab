@@ -23,16 +23,25 @@ function index(req, res) {
   })
 }
 
-// function show(req, res) {
-//   Flight.findById(req.params.id, function(err, flight) {
-//     res.render('flights/show', {
+function show(req, res) {
+  Flight.findById(req.params.id, function(err, flight) {
+    res.render('flights/show', {
+      title: 'Flight Detail',
+      flight: flight,
+    })
+  })
+}
 
-//     })
-//   })
-// }
+function deleteFlight(req, res) {
+  Flight.findByIdAndDelete(req.params.id, function(err, flight){
+    res.redirect('/flights')
+  })
+}
 
 export {
   newFlight as new,
   create,
   index,
+  show,
+  deleteFlight as delete,
 }
