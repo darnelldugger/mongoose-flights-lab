@@ -1,7 +1,7 @@
 body {
   background-color: black ;
   margin: 1rem;
-  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 #navLink {
@@ -9,7 +9,6 @@ body {
   border-style: solid;
   border-radius: .3rem;
   text-decoration: none;
-  font-size: 20px;
   margin: 1rem;
   border-width: .2rem;
   padding: .5rem;
@@ -38,12 +37,9 @@ nav {
   align-items: center;
   margin-top: 1rem;
   height: 370px;
-  font-size: 10px;
+  font-size: 20px;
 }
 
-table {
-  font-size: 2rem;
-}
 
 table thead th {
   padding: 5px;
@@ -65,7 +61,6 @@ table td {
   background-color: #b8c0c2;
   padding: 4px;
   text-decoration: none;
-  font-size: 1.6rem;
   color: #424748;
 }
 
@@ -80,7 +75,6 @@ table td {
 button {
   background-color: white;
   color: black;
-  font-size: 15px;
   border-style: solid;
   border-radius: .3rem;
   border-width: .2rem;
@@ -89,15 +83,10 @@ button {
 
 @media only screen and (min-width: 768px) {
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: 
-    center;
-    align-items: center;
-    width: 100%;
+  width: 100%;
   }
   
   nav {
-    width: 60%;
+    width: 100%;
   }
 }
