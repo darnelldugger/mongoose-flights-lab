@@ -6,14 +6,12 @@ function newFlight(req, res){
 }
 
 function create(req, res) {
-  console.log('this works', req.body)
   const flight = new Flight(req.body)
   flight.save(function(err) {
     if (err) {
-      // return res.redirect('/flights/new')
-      console.log(err)
+      return res.redirect('/flights/new')
     }
-    res.redirect('/flights/new')
+    res.redirect('/flights')
   })
 }
 

@@ -3,10 +3,6 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
   background-color: black;
-  display: grid;
-  grid-template-rows: 3fr 3fr;
-
- 
 }
 
 .main {
