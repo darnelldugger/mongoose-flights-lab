@@ -34,3 +34,18 @@ body {
 h1 {
   margin: 2rem;
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+    center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav {
+    width: 60%;
+  }
+}
