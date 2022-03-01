@@ -1,6 +1,7 @@
 body {
   background-color: black ;
   margin: 1rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #navLink {
@@ -36,7 +37,7 @@ nav {
   align-items: center;
   margin-top: 1rem;
   height: 330px;
-  font-size: 25px;
+  font-size: 20px;
   padding: 1rem;
 }
 
