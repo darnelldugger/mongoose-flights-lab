@@ -38,7 +38,6 @@ nav {
   margin-top: 1rem;
   height: 330px;
   font-size: 20px;
-  padding: 1rem;
 }
 
 ul {
@@ -102,7 +101,6 @@ button {
 
 @media only screen and (min-width: 768px) {
   .content {
-    /* padding: 4rem; */
     width: 100%;
   }
   

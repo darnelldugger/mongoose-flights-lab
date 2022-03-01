@@ -17,7 +17,7 @@ body {
 
 nav {
   background-color: yellow;
-  border-radius: .3rem;
+  border-radius: 1rem;
   height: fit-content;
   text-align: right;
   height: 100px;
@@ -29,7 +29,7 @@ nav {
 
 .content {
   background-color: yellow;
-  border-radius: .3rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: 
@@ -82,7 +82,7 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
+  .content {
   width: 100%;
   }
   
