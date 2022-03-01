@@ -5,6 +5,17 @@ font-family: 'Open Sans', sans-serif;
 font-size: 15px;
 }
 
+i {
+  font-size: 2em;
+  padding-left: 2rem;
+}
+
+nav > i {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
 #navLink {
   color: black;
   border-style: solid;
