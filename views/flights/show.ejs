@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='/stylesheets/index.css' />
+  <link rel='stylesheet' href='/stylesheets/show.css' />
   <title>Document</title>
 </head>
 <body>
+<nav>
   <a 
-  href="/flights" id="navLink5"
+  href="/flights" id="navLink"
   >View All Flights</a>
   <a 
-  href="/flights/new" id="navLink3"
+  href="/flights/new" id="navLink"
   > Add New Flight</a>
 </nav>
 <main>
@@ -27,6 +28,39 @@
     <div>Depart Date: </div>
     <div><%= flight.departs %></div>
   </section>
+  <h2>Add A Ticket</h2>
+  <form 
+    id="add-ticket-form"
+    action="/flights/<%= flight._id %>/tickets"
+    method="POST"
+  >
+    <label for="content-textarea">Seat:</label>
+    <textarea name="seat" id="seat-textarea"></textarea>
+    <label for="price-textarea">Price:</label>
+    <textarea name="price" id="price-textarea"></textarea>
+    <button type="submit">Add Ticket</button>
+  </form>
+  <% if (flight.tickets.length) { %> 
+    <table>
+      <thead>
+        <h2>Purchased Tickets</h2>
+        <tr>
+          <th>Seat</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% flight.tickets.forEach(function(ticket) { %> 
+          <tr>
+            <td><%= ticket.seat %> </td>
+            <td><%= ticket.price %> </td>
+          </tr>
+        <% }) %> 
+      </tbody>
+    </table>
+  <% } else { %>
+    <h3>No Tickets Has Been Purchased</h3> 
+  <% } %> 
 </main>
 </body>
 </html>

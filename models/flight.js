@@ -12,7 +12,7 @@ const ticketSchema = new Schema ({
     min: 0
   }
 }, {
-  timeseries: true
+  timestamps: true
 })
 
 const flightSchema = new Schema ({

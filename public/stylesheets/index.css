@@ -1,63 +1,86 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  text-align: center;
-  background-color: white;
+  background-color: black ;
+  margin: 2rem;
 }
 
-.main {
-  background-color: yellow;
-  height: 100%;
-  margin-bottom: none;
-  border-radius: .3rem;
-}
-a {
+#navLink {
   color: black;
-  text-decoration: none;
   border-style: solid;
   border-radius: .3rem;
-  border-color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 1rem;
+  border-width: .2rem;
+  padding: .5rem;
+  background-color: white;
+}
+
+nav {
   background-color: yellow;
- 
-}
-
-.navLinks {
-  margin: .5rem;
-  padding-top: 3rem;
-  background-color: white;
-  height: 100%;
   border-radius: .3rem;
+  height: fit-content;
+  text-align: right;
+  height: 100px;
+  display: flex;
+  justify-content: 
+  center;
+  align-items: center
 }
 
-#navLink1 {
-margin-bottom: 3rem;
-  padding: .5rem;
-}
-
-#navLink2 {
-  padding: .5rem;
-}
-
-#navLink3 {
-  padding: .5rem;
-}
-
-.homePgLink {
-  margin-top: 3rem;
-}
 .content {
-  background-color: white;
-  margin: 3rem;
-  padding: 3rem;
+  background-color: yellow;
   border-radius: .3rem;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: 
+  center;
+  align-items: center;
+  margin-top: 1rem;
+  height: 370px;
 }
 
-#column1 {
-  padding: 1rem;
-  margin: 1rem;
+table {
+  font-size: 2rem;
 }
 
-#column3{
-  margin: 1rem;
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#list td:nth-child(2),
+#list td:nth-child(3) {
+  min-width: 100px;
+}
+
+#list a {
+  border-radius: 4px;
+  background-color: #b8c0c2;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #424748;
+}
+
+#list a:visited{
+  color: #424748;
+}
+
+#list a:hover {
+  background-color: white;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border-style: solid;
+  border-radius: .3rem;
+  border-width: .2rem;
+  border-color: black;
 }

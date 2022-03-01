@@ -10,10 +10,10 @@
 <body>
   <nav>
     <a 
-      href="/flights" id="navLink5"
+      href="/flights" id="navLink"
       >View All Flights</a>
       <a 
-      href="/flights/new" id="navLink3"
+      href="/flights/new" id="navLink"
       > Add New Flight</a>
   </nav>
   <div class="content">
@@ -31,7 +31,7 @@
         <tr>
           <td id="column1"><%= flight.airline %></td>
           <td id="column3"><%= flight.flightNo %></td>
-          <td><a href="/flights/<%= flight._id %>">DETAILS</a></td>
+          <td><a href="/flights/<%= flight._id %>" id="navLink">DETAILS</a></td>
           <td>
             <form action="/flights/<%= flight._id %>?_method=DELETE" method="POST">
               <button>X</button>
