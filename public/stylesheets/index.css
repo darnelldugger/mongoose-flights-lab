@@ -23,13 +23,11 @@ body {
   color: black;
 }
 
-i {
-  font-size: 2em;
-  padding-left: 2rem;
-}
 
 #delete-flight-icon {
-  font-size: 1em;
+  font-size: 1.2em;
+  background-color: yellow;
+  border: none;
 }
 
 nav > i {
@@ -95,14 +93,7 @@ table td {
   background-color: white;
 }
 
-button {
-  background-color: white;
-  color: black;
-  border-style: solid;
-  border-radius: .3rem;
-  border-width: .2rem;
-  border-color: black;
-}
+
 
 @media only screen and (min-width: 768px) {
   .content {
