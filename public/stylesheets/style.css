@@ -8,6 +8,23 @@ body {
   align-items: center; */
 }
 
+nav > i {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+nav {
+  background-color: yellow;
+  border-radius: 1rem;
+  text-align: right;
+  display: flex;
+  justify-content: 
+  center;
+  align-items: center;
+
+}
+
 #navLink {
   color: black;
   border-style: solid;

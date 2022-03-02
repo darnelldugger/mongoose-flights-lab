@@ -5,14 +5,14 @@ body {
 }
 
 #navLink {
-  color: black;
+  color: yellow;
   border-style: solid;
-  border-radius: .3rem;
+  border-radius: 1rem;
   text-decoration: none;
   margin: .5rem;
   border-width: .2rem;
   padding: .5rem;
-  background-color: white;
+  background-color: black;
   font-size: 13.5px;
   text-align: center;
 }
@@ -34,6 +34,8 @@ nav > i {
   width: 34px;
   object-fit: contain;
   margin-right: auto;
+  font-size: 2em;
+  padding-left: 3rem;
 }
 
 nav {
