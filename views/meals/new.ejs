@@ -9,19 +9,45 @@
 </head>
 <body>
   <main>
+    <nav>
+      <i class="fas fa-plane-arrival"></i>
+      <a 
+      href="/meals/new" id="navLink"
+      >Add Meal</a>
+      <a 
+        href="/flights" id="navLink"
+        >View All Flights</a>
+        <a 
+        href="/flights/new" id="navLink"
+        > Add New Flight</a>
+    </nav>
     <h1><%= title %></h1>
-    <p>Please first ensure that the Meal is not in the dropdown
-      <select>
-        <% meals.forEach(function(meal) { %>
-          <option><%= meal.name %></option>
-        <% }) %>
-      </select>
-    </p>
     <form id="add-meal-form" action="/meals" method="POST">
       <label for="name-input">Name:</label>
       <input type="text" name="name" id="name-input">
       <button type="submit">Add Meal</button>
     </form>
+    <table id="list">
+      <thead>
+        <tr>
+          <th>Meals Already Added</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%# Oh hey, this is an ejs comment! It starts with a # %>
+        <% meals.forEach(meal => { %>
+          <tr>
+            <td><%= meal.name %></td>
+            <td>
+              <form action="/meals/<%= meal._id %>?_method=DELETE" method="POST">
+                <button>X</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
   </main>
 </body>
 </html>
