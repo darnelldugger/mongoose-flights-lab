@@ -36,10 +36,11 @@
         <tr>
           <td id="column1"><%= flight.airline %></td>
           <td id="column3"><%= flight.flightNo %></td>
-          <td><a href="/flights/<%= flight._id %>" id="navLink">DETAILS</a></td>
+          <td><a href="/flights/<%= flight._id %>" id="details-link"><i class="fas    fa-circle-info" id="info-icon"></i></a>
+          </td>
           <td>
             <form action="/flights/<%= flight._id %>?_method=DELETE" method="POST">
-              <button>X</button>
+              <i class="fas fa-trash-can" id="delete-flight-icon"></i>
             </form>
           </td>
         </tr>
