@@ -9,10 +9,12 @@ body {
   border-style: solid;
   border-radius: .3rem;
   text-decoration: none;
-  margin: 1rem;
+  margin: .5rem;
   border-width: .2rem;
   padding: .5rem;
   background-color: white;
+  font-size: 13.5px;
+  text-align: center;
 }
 
 

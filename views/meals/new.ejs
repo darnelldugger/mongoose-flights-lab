@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/219a77197a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/stylesheets/meals/new.css" />
   <title>Add Meal</title>
 </head>
 <body>
+  <nav>
+    <i class="fas fa-plane-arrival"></i>
+    <a 
+    href="/meals/new" id="navLink"
+    >Add Meal</a>
+    <a 
+      href="/flights" id="navLink"
+      >View Flights</a>
+      <a 
+      href="/flights/new" id="navLink"
+      > Add Flight</a>
+  </nav>
   <main>
-    <nav>
-      <i class="fas fa-plane-arrival"></i>
-      <a 
-      href="/meals/new" id="navLink"
-      >Add Meal</a>
-      <a 
-        href="/flights" id="navLink"
-        >View All Flights</a>
-        <a 
-        href="/flights/new" id="navLink"
-        > Add New Flight</a>
-    </nav>
     <h1><%= title %></h1>
     <form id="add-meal-form" action="/meals" method="POST">
       <label for="name-input">Name:</label>
       <input type="text" name="name" id="name-input">
       <button type="submit">Add Meal</button>
     </form>
-    <table id="list">
+    <table  class="meals-added" id="list">
       <thead>
         <tr>
           <th>Meals Already Added</th>
@@ -39,11 +40,6 @@
         <% meals.forEach(meal => { %>
           <tr>
             <td><%= meal.name %></td>
-            <td>
-              <form action="/meals/<%= meal._id %>?_method=DELETE" method="POST">
-                <button>X</button>
-              </form>
-            </td>
           </tr>
         <% }) %>
       </tbody>
