@@ -35,13 +35,14 @@
     <div><%= flight.flightNo %></div>
     <div>Depart Date: </div>
     <div><%= flight.departs %></div>
-    <div>Carte:</div>
+    <div>Al La Carte:</div>
     <ul>
       <% flight.carte.forEach(mealDinner => { %>
         <li><%= mealDinner.name %></li>
       <% }) %>
     </ul>
   </section>
+  <h2>Add A meal</h2>
   <form 
   id="add-per-to-meal" 
   action="/flights/<%= flight._id %>/meals"
